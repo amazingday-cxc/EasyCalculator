@@ -5,17 +5,17 @@
 #include <conio.h>
 #pragma warning(disable:4996)
 
-double Plus(double tp1, double tp2);//¼Ó·¨º¯Êı
+double Plus(double tp1, double tp2);//åŠ æ³•å‡½æ•°
 
-double Minu(double tp1, double tp2);//¼õ·¨º¯Êı
+double Minu(double tp1, double tp2);//å‡æ³•å‡½æ•°
 
-double Muly(double tp1, double tp2);//³Ë·¨º¯Êı
+double Muly(double tp1, double tp2);//ä¹˜æ³•å‡½æ•°
 
-double Divi(double tp1, double tp2);//³ı·¨º¯Êı
+double Divi(double tp1, double tp2);//é™¤æ³•å‡½æ•°
 
-double Invo(double tp1, double tp2);//³Ë·½º¯Êı
+double Invo(double tp1, double tp2);//ä¹˜æ–¹å‡½æ•°
 
-double Sqrt(double tp1, double tp2);//¿ª·½º¯Êı
+double Sqrt(double tp1, double tp2);//å¼€æ–¹å‡½æ•°
 
 
 int main(void)
@@ -28,116 +28,115 @@ int main(void)
 	num2 = 0;
 	ans = 0;
 	
-	printf("Ê¹ÓÃĞëÖª£º\n");
-	printf("1.±¾³ÌĞò¼ÆËã¾«¶ÈÎªĞ¡ÊıµãºóÁ½Î»£¬²»¿ÉÓÃÓÚ¸ß¾«¶È¼ÆËã¼°³¤Î»Êı¼ÆËã\n");
-	printf("2.ÊäÈëÊ±Êı×Ö·ûºÅÖ®¼äÎŞ¼ä¸ô£¬ÓÉÓÚ¼¼ÊõÔ­Òò½öÖ§³ÖÒ»´Î·ûºÅ¼ÆËã\n");
-	printf("3.ÔÚ½øĞĞ³Ë·½¼ÆËãÊ±ÇëÊ¹ÓÃC×÷ÎªÔËËã·û£¬µÚÒ»¸öÎª±»³Ë·½Êı£¬µÚ¶ş¸öÎª´Î·½Êı\n");
-	printf("4.ÔÚ½øĞĞ¿ª·½¼ÆËãÊ±ÇëÊ¹ÓÃS×÷ÎªÔËËã·û£¬µÚÒ»¸öºÍµÚ¶ş¸öÊı×ÖÏàÍ¬\n");
+	printf("ä½¿ç”¨é¡»çŸ¥ï¼š\n");//æ‰“å°ä»‹ç»æ–‡æœ¬
+	printf("1.æœ¬ç¨‹åºè®¡ç®—ç²¾åº¦ä¸ºå°æ•°ç‚¹åä¸¤ä½ï¼Œä¸å¯ç”¨äºé«˜ç²¾åº¦è®¡ç®—åŠé•¿ä½æ•°è®¡ç®—\n");
+	printf("2.è¾“å…¥æ—¶æ•°å­—ç¬¦å·ä¹‹é—´æ— é—´éš”ï¼Œç”±äºæŠ€æœ¯åŸå› ä»…æ”¯æŒä¸€æ¬¡ç¬¦å·è®¡ç®—\n");
+	printf("3.åœ¨è¿›è¡Œä¹˜æ–¹è®¡ç®—æ—¶è¯·ä½¿ç”¨Cä½œä¸ºè¿ç®—ç¬¦ï¼Œç¬¬ä¸€ä¸ªä¸ºè¢«ä¹˜æ–¹æ•°ï¼Œç¬¬äºŒä¸ªä¸ºæ¬¡æ–¹æ•°\n");
+	printf("4.åœ¨è¿›è¡Œå¼€æ–¹è®¡ç®—æ—¶è¯·ä½¿ç”¨Sä½œä¸ºè¿ç®—ç¬¦ï¼Œç¬¬ä¸€ä¸ªå’Œç¬¬äºŒä¸ªæ•°å­—ç›¸åŒ\n");
 	printf("\n");
-	printf("ÊÇ·ñ¿ªÊ¼Ê¹ÓÃ£¿(Yes/No)\n");
+	printf("æ˜¯å¦å¼€å§‹ä½¿ç”¨ï¼Ÿ(Yes/No)\n");
 	
-	scanf("%s", jdg);
+	scanf("%s", jdg);//æ£€æµ‹æ˜¯å¦å¼€å§‹è¾“å…¥
 	
-	if ( strcmp(jdg, jd) == 0 )
+	if ( strcmp(jdg, jd) == 0 ) //æ¯”è¾ƒé¢„å…ˆè®¾ç½®å¥½çš„"yes",å¦‚æœä¸€è‡´åˆ™ç»§ç»­
 	{ 
-		system("cls");
-		//printf("\n");
-		printf("»¶Ó­Ê¹ÓÃ£¡\n");
+		system("cls");//å¦‚æœè¾“å…¥å€¼ä¸º"yes"ï¼Œæ‰§è¡Œæ¸…å±ç³»ç»Ÿå‡½æ•°
+		printf("æ¬¢è¿ä½¿ç”¨ï¼\n");
 	}
 	else
 	{
-		return 0;
+		return 0;//å¦‚æœè¾“å…¥å€¼ä¸º"no",åˆ™ä¸æ‰§è¡Œä¸‹ä¸€æ­¥ï¼Œé€€å‡ºç¨‹åº
 	}
-	do
+	do //é¦–å…ˆæ‰§è¡Œç¬¬ä¸€æ­¥è®¡ç®—ï¼ŒåæœŸåˆ¤æ–­æ˜¯å¦ç»§ç»­ï¼Œå¼•ç”¨while
 	{
-		printf("ÇëÊäÈë¼ÆËãÄÚÈİ£º\n");
-		scanf("%lf%c%lf", &num1, &otr, &num2);
-		switch (otr)
+		printf("è¯·è¾“å…¥è®¡ç®—å†…å®¹ï¼š\n");
+		scanf("%lf%c%lf", &num1, &otr, &num2);//å›ºå®šæ ¼å¼è¾“å…¥è®¡ç®—å†…å®¹
+		switch (otr) //æ£€æµ‹è¾“å…¥ç¬¦å·ï¼Œä½¿ç”¨ç‰¹å®šè®¡ç®—å‡½æ•°
 		{
-			case '+':
-				ans = Plus(num1, num2);
-				printf("¼Ó·¨½á¹ûÎª: %.0f", ans);
+			case '+': // åˆ¤æ–­è®¡ç®—å‡½æ•°
+				ans = Plus(num1, num2); //æ‰§è¡Œè®¡ç®—ï¼Œä¸‹åŒ
+				printf("åŠ æ³•ç»“æœä¸º: %.0f", ans); //æ‰“å°è®¡ç®—å†…å®¹ï¼Œä¸‹åŒ
 				break;
 			case '-':
 				ans = Minu(num1, num2);
-				printf("¼õ·¨½á¹ûÎª: %.0f", ans);
+				printf("å‡æ³•ç»“æœä¸º: %.0f", ans);
 				break;
 			case '*':
 				ans = Muly(num1, num2);
-				printf("³Ë·¨½á¹ûÎª: %.2f", ans);
+				printf("ä¹˜æ³•ç»“æœä¸º: %.2f", ans);
 				break;
 			case '/':
 				ans = Divi(num1, num2);
-				printf("³ı·¨½á¹ûÎª: %.2f", ans);
+				printf("é™¤æ³•ç»“æœä¸º: %.2f", ans);
 				break;
 			case 'C':
 				ans = Invo(num1, num2);
-				printf("³Ë·½½á¹ûÎª: %.2f", ans);
+				printf("ä¹˜æ–¹ç»“æœä¸º: %.2f", ans);
 				break;
 			case 'K':
 				ans = Sqrt(num1, num2);
-				printf("¿ª·½½á¹ûÎª: %.2f", ans);
+				printf("å¼€æ–¹ç»“æœä¸º: %.2f", ans);
 				break;
 			default:
-				printf("Êı¾İ´íÎó");
+				printf("æ•°æ®é”™è¯¯");
 				break;
 		}
-		printf("\nÊÇ·ñ¼ÌĞø¼ÆËã?(Yes/No)");
-		scanf("%s", jdg);
-		if ( strcmp(jdg, jd) == 0 )
+		printf("\næ˜¯å¦ç»§ç»­è®¡ç®—?(Yes/No)");
+		scanf("%s", jdg); //åˆ¤æ–­æ˜¯å¦è¿›è¡Œè®¡ç®—
+		if ( strcmp(jdg, jd) == 0 ) //å°†è¾“å…¥å€¼ä¸é¢„è®¾å­—ç¬¦ä¸²è¿›è¡Œæ¯”è¾ƒ
 		{
-			judg = 1;
+			judg = 1; //ç»§ç»­è®¡ç®—æ ‡å¿—å˜é‡
 			system("cls");
 		}
 		else
 		{
-			judg = 0;
+			judg = 0; //ç»ˆæ­¢è®¡ç®—æ ‡å¿—å˜é‡
 			system("cls");
 		}
-	}while ( judg == 1 );
+	}while ( judg == 1 );  //æ£€æµ‹æ ‡å¿—å˜é‡åˆ¤æ–­æ˜¯å¦ç»§ç»­æ‰§è¡Œ
 	//printf("\n");
-	printf("Ğ»Ğ»Ê¹ÓÃ£¡\n");
-	printf("×÷ÕßQQ£º2111321623\n");
-	printf("°´ÈÎÒâ¼üÍË³ö...\n");
-	getch();
-	return 0;
+	printf("è°¢è°¢ä½¿ç”¨ï¼\n"); //æ‰“å°æ–‡æœ¬
+	printf("ä½œè€…QQï¼š2111321623\n");
+	printf("æŒ‰ä»»æ„é”®é€€å‡º...\n");
+	getch();//å®ç°ä»»æ„å€¼è¾“å…¥è¿”å›å¹¶ç»“æŸç¨‹åº
+	return 0; 
 }
 
-double Plus(double tp1, double tp2)//¼Ó·¨º¯Êı
+double Plus(double tp1, double tp2)//åŠ æ³•å‡½æ•°
 {
 	double ans;
 	ans = tp1 + tp2;
 	return ans;
 }
-double Minu(double tp1, double tp2)//¼õ·¨º¯Êı
+double Minu(double tp1, double tp2)//å‡æ³•å‡½æ•°
 {
 	double ans;
 	ans = tp1 - tp2;
 	return ans;
 }
-double Muly(double tp1, double tp2)//³Ë·¨º¯Êı
+double Muly(double tp1, double tp2)//ä¹˜æ³•å‡½æ•°
 {
 	double ans;
 	ans = tp1 * tp2;
 	return ans;
 }
-double Divi(double tp1, double tp2)//³ı·¨º¯Êı
+double Divi(double tp1, double tp2)//é™¤æ³•å‡½æ•°
 {
 	double ans;
 	ans = tp1 / tp2;
 	return ans;
 }
-double Invo(double tp1, double tp2)//³Ë·½º¯Êı
+double Invo(double tp1, double tp2)//ä¹˜æ–¹å‡½æ•°
 {
 	int temp;
 	double ans = 1;
-	for ( temp = 0; temp < tp2; temp++)
+	for ( temp = 0; temp < tp2; temp++) //ä¹˜æ–¹ç®—æ³•
 	{
 		ans = ans * tp1;
 	}
 	return ans;
 }
-double Sqrt(double tp1, double tp2)//¿ª·½º¯Êı
+double Sqrt(double tp1, double tp2)//å¼€æ–¹å‡½æ•°
 {
 	double ans;
 	ans = sqrt(tp1);
