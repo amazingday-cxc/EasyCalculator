@@ -1,2 +1,2 @@
 # EasyCalculator
-My first visual studio 2019 project
+My first Visual Studio project
